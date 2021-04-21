@@ -6,6 +6,7 @@ from werkzeug.exceptions import abort
 
 app = Flask(__name__)
 app.config['SECRECT_KEY'] = '2ef13f938a71275a552bbe4d272f6e24'
+app.config['SESSION_TYPE'] = 'filesystem'
 
 
 @app.route('/')
