@@ -88,3 +88,13 @@ def delete(id):
     conn.close()
     flash('"{}" was successfully deleted!'.format(post['title']))
     return redirect(url_for('index'))
+
+
+@app.route('/login', methods=('GET','POST'))
+def login():
+    return render_template('login.html')
+
+
+@app.route('/signup', methods=('GET','POST'))
+def signup():
+    return render_template('signup.html')
