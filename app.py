@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request, url_for, redirect
-from flask import flash
+from flask import Flask, render_template, request, url_for, redirect, flash
 import sqlite3
 from werkzeug.exceptions import abort
 
